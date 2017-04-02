@@ -7,11 +7,10 @@ import { AppendFile } from '../bash/Echo';
 import Cd from '../bash/Cd';
 
 export function PHPExtensions({ extensions }) {
-  // const lines = ['docker-php-ext-install', ...extensions];
+  const lines = ['docker-php-ext-install', ...extensions];
   return (
     <SplitSingleline>
-      <Cmd>docker-php-ext-install</Cmd>
-      { extensions }
+      { lines }
     </SplitSingleline>
   );
 }
