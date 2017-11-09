@@ -5,7 +5,7 @@ import Multiline from '../common/Multiline';
 export default function Run({ children }) {
   return (
     <Line spaced>
-      <span style={{ color: '#2F89F6' }}>RUN</span> <Multiline>{ children }</Multiline>
+      <span style={{ color: '#42A8C0' }}>RUN</span> <Multiline>{ children }</Multiline>
     </Line>
   );
 }
